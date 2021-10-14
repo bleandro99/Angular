@@ -1,0 +1,8 @@
+<h1>Héroes <small>Marvel y DC</small></h1>
+<div class="card-columns animated fadeIn fast">
+
+    <!--(heroeSeleccionado)="verMas($event)" esto es para el @Output -->
+    <app-heroe-targeta *ngFor="let heroe of heroes; let i = index" [heroe]="heroe" [index]="i">
+
+    </app-heroe-targeta>
+</div>
